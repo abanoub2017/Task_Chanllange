@@ -1,5 +1,5 @@
 ## General info
-This project is Task  Trufla Code Challenge , The design is very cool and has small tricks
+This project is Task   Code Challenge , The design is very cool and has small tricks
 ## Challenge
 * Header in Desktop is different from Mobile and tablet , 
   I use the Media Query for each screen to implement the Design 
@@ -17,4 +17,4 @@ This project is Task  Trufla Code Challenge , The design is very cool and has sm
 
 
 ## Demo Link
-* https://abanoub2017.github.io/Trufla_Code_Challenge/index.html
+* https://abanoub2017.github.io/Task_Chanllange/
