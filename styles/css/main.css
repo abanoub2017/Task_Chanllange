@@ -634,6 +634,11 @@
 .intersted-work .img img {
   width: 70%;
 }
+@media (max-width: 767px) {
+  .intersted-work .img img {
+    width: 100%;
+  }
+}
 
 .testimonial {
   padding: 104px 0 70px 0;
@@ -684,6 +689,11 @@
 @media (max-width: 991px) {
   .testimonial .carousel-control-next {
     right: 75%;
+  }
+}
+@media (max-width: 767px) {
+  .testimonial .carousel-control-next {
+    right: 70%;
   }
 }
 .testimonial .img {

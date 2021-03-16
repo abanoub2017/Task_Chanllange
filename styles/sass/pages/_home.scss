@@ -251,7 +251,9 @@
         }
         img {
             width: 70%;
-           
+            @include maxMobile {
+                width: 100%;
+            }
         }
     }
 }
@@ -287,6 +289,9 @@
         right: 83%;
         @include maxTablet {
             right: 75%;
+        }
+        @include maxMobile {
+            right: 70%;
         }
     }
     .img{
