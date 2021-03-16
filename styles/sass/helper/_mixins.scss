@@ -1,0 +1,123 @@
+/*
+ ** Media Query Mixin For Help 
+ */
+
+@mixin maxTablet {
+    @media (max-width:991px) {
+        @content;
+    }
+}
+
+@mixin maxMobile {
+    @media (max-width:767px) {
+        @content;
+    }
+}
+
+ /*
+ ** Perfixes Mixin
+ ** Auto Add Perfixes To Properties
+ */
+
+ @mixin prefixer($property , $value, $prefixes : ()) {
+    @each $prefix in $prefixes {
+        #{'-' + $prefix + '-' + $property}: $value;
+    }
+    #{$property} : $value;
+}
+
+/*
+ ** links Style Mixin For Help 
+ */
+
+ @mixin links {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+     @content;
+ }
+
+/*
+ **  side menu Style Mixin For Help 
+ */
+
+ @mixin SideMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: $whiteColor;
+    color: $SecColor;
+    height: calc(100vh);
+    width: 100%;
+    z-index: 999;
+    padding: 15px;
+    @include prefixer(transform, translate(0)  translateZ(200px) , webkit moz o ms) ;
+    transition: all .3s ease-in-out;
+    overflow-y: scroll;
+     @content;
+ }
+
+ /*
+ ** links for side menu Style Mixin For Help 
+ */
+
+ @mixin linkSideMenu {
+    color: $SecColor;
+    font-family: Roboto;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 20px;
+     @content;
+ }
+
+
+ /*
+ ** links for dropdwon Style Mixin For Help 
+ */
+
+ @mixin linkDropdwon {
+    color: $grayColor;
+    font-family: Roboto;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 19px;
+    text-transform: capitalize;
+     @content;
+ }
+
+ /*
+ **  Main header links Style Mixin For Help 
+ */
+
+ @mixin MainHeaderlink {
+    text-decoration: none;
+    color: $whiteColor;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 20px;
+    text-align: center;
+ }
+
+// Global Style Text
+ @mixin text(
+  $color,
+  $size,
+  $family: inherit,
+  $letter-spacing: normal,
+  $line-height,
+  $weight : normal,
+) {
+  color: $color;
+  font-size: $size;
+  font-weight: $weight;
+  font-family: $family;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+}

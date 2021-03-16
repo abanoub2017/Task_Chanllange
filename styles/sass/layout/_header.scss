@@ -1,0 +1,282 @@
+//  Header (iclude Side menu in Responsive)
+.main-header {
+    background: url(../../images/slider.png) no-repeat center center;
+    background-size: cover;
+
+    .header {
+        padding: 15px 0;
+
+        @include maxMobile {
+            padding: 10px;
+        }
+
+        .logo {
+            @include maxMobile {
+                display: none;
+                height: 27px;
+                width: 75px;
+            }
+        }
+
+        .logo-no-text {
+            display: none;
+
+            @include maxMobile {
+                display: inline;
+                height: 33px;
+                width: 38px;
+            }
+        }
+
+        .info {
+            img {
+                @include maxMobile {
+                    height: 18px;
+                    width: 18px;
+                }
+            }
+
+            div {
+                .btn {
+                    border-radius: 5px;
+
+                    &:hover {
+                        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+                        transition: all .3s ease-in-out;
+                        -webkit-transition: all .3s ease-in-out;
+                        -moz-transition: all .3s ease-in-out;
+                        -ms-transition: all .3s ease-in-out;
+                        -o-transition: all .3s ease-in-out;
+                    }
+
+                    @include maxTablet {
+                        margin-left: 28px;
+                        font-weight: normal;
+                    }
+
+                    @include links {
+                        background-color: $primaryColor;
+                        color: $whiteColor;
+                        padding: 11px 18px;
+                        font-weight: normal;
+                        text-transform: capitalize;
+                    }
+
+                    @include maxMobile {
+                        font-size: 12px;
+                        margin-left: 13px;
+                        border-radius: 2px;
+                        padding: 7px 10px;
+                        font-weight: normal;
+                    }
+
+                }
+
+            }
+
+            .links-menu {
+                a {
+                    margin: 0;
+                    text-decoration: none;
+
+                    &:hover {
+                        color: $primaryColor;
+                        transition: all .3s ease-in-out;
+                        -webkit-transition: all .3s ease-in-out;
+                        -moz-transition: all .3s ease-in-out;
+                        -ms-transition: all .3s ease-in-out;
+                        -o-transition: all .3s ease-in-out;
+                    }
+
+                    @include maxTablet {
+                        display: none;
+                    }
+
+                    @include links {
+                        color: $whiteColor;
+                        font-weight: normal;
+                        text-transform: capitalize;
+                        font-family: inherit;
+                        padding: 0 12px;
+                    }
+                }
+            }
+        }
+
+        // Side menu 
+        .side-menu {
+            position: relative;
+            display: none;
+
+            @include maxTablet {
+                display: inline;
+            }
+
+            .icon {
+                cursor: pointer;
+
+                img {
+                    @include maxTablet {
+                        height: 46px;
+                        width: 57px;
+                    }
+
+                    @include maxMobile {
+                        height: 46px;
+                        width: 57px;
+                    }
+                }
+            }
+
+            .side-menu-item {
+                @include SideMenu;
+
+                .close {
+                    p {
+                        font-weight: bold;
+                        font-size: 22px;
+                        text-align: right;
+                        margin: 0;
+                    }
+                }
+
+                .drop-dwon {
+                    .drop-dwon-title {
+                        display: inline-block;
+                        @include linkSideMenu;
+                        cursor: pointer;
+                    }
+
+                    .drop-dwon-content {
+                        display: none;
+
+                        li {
+                            border: none;
+                            padding: 10px 0;
+
+                            &:first-child {
+                                padding-top: 18px;
+                            }
+
+                            a {
+                                @include linkDropdwon;
+                            }
+                        }
+                    }
+                }
+
+                ul {
+                    li {
+                        border-bottom: 1px solid $graySecColor;
+                        padding: 21px 0;
+
+                        a {
+                            text-decoration: none;
+                            @include linkSideMenu;
+                        }
+                    }
+                }
+
+                .side-menu-info {
+                    text-align: center;
+                    padding-top: 20px;
+
+                    p,
+                    div {
+                        margin: 0;
+                        padding: 13px;
+                        @include links;
+                    }
+
+                    .btn {
+                        @include links {
+                            background-color: $primaryColor;
+                            color: $whiteColor;
+                            padding: 16px 29px;
+                        }
+                    }
+                }
+            }
+
+            .hiden-menu {
+                @include prefixer(transform, translate(-100%), webkit moz o ms)
+            }
+        }
+    }
+
+    // Wellcome
+    .slider {
+        // Content
+        .content {
+            // padding: 120px 0;
+            padding: 160px 0 160px 96px;
+
+            @include maxTablet {
+                text-align: center;
+                padding: 160px 0 160px 0;
+            }
+
+            @include maxMobile {
+                // padding: 30px 0 70px 0;
+                padding: 54px 0 85px 0;
+            }
+
+            .title {
+                @include text($whiteColor, 50px, inherit, 0, normal, bold);
+
+                @include maxTablet {
+                    font-size: 38px;
+                    line-height: 48px;
+                }
+
+                @include maxMobile {
+                    font-size: 30px;
+                }
+            }
+
+            .sub-title {
+                @include text($whiteColor, 15px, inherit, 0, 30px);
+                width: 56%;
+                padding-top: 16px;
+
+                @include maxTablet {
+                    width: 91%;
+                    margin: auto;
+                }
+
+                @include maxMobile {
+                    width: 100%;
+                    margin: auto;
+                    font-size: 14px;
+                }
+            }
+
+            .action {
+                padding-top: 35px;
+
+                a {
+                    &:hover {
+                        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+                        transition: all .3s ease-in-out;
+                        -webkit-transition: all .3s ease-in-out;
+                        -moz-transition: all .3s ease-in-out;
+                        -ms-transition: all .3s ease-in-out;
+                        -o-transition: all .3s ease-in-out;
+                    }
+
+                    @include text($whiteColor, 15px, inherit, 0, normal, normal);
+                    text-decoration: none;
+                    padding: 13px 30px;
+                    border-radius: 4px;
+                    background-color: $primaryColor;
+                    text-align: center;
+                    text-transform: capitalize;
+
+                    @include maxMobile {
+                        padding: 14px 40px;
+                    }
+                }
+            }
+        }
+    }
+}

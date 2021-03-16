@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <!-- optimize your webpage for smaller screens -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Abanoub George">
+    <!-- included in search results to concisely summarize page content. -->
+    <meta name="description" content="Articles on frontend development written by Abanoub George, Frontend Developer">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Frontend, Web Development">
+
+    <!-- Facebook, Whatsapp -->
+    <meta property="og:site_name" content="Abanoub George">
+    <meta property="og:title" content="Abanoub George's Personal website and Blog">
+    <meta property="og:description"
+        content="Articles on frontend development written by Abanoub George, Frontend Developer">
+    <meta property="og:image" content="logo.png">
+    <meta property="og:url" content="https//www.facebook.com">
+
+    <!-- Twitter -->
+    <meta name="twitter:title" content="Abanoub George's Personal website and Blog">
+    <meta name="twitter:description"
+        content="Articles on frontend development written by Abanoub George, Frontend Developer">
+    <meta name="twitter:image" content="logo.png">
+    <meta property="twitter:url" content="https//www.twitter.com">
+    <meta name="twitter:card" content="summary">
+    <!-- Bootstrap Style -->
+    <link rel="stylesheet" href="./styles/css/bootstrap.min.css">
+    <!-- Main Style -->
+    <link rel="stylesheet" href="./styles/css/main.css">
+</head>
+
+<body>
+
+    <section class="main-header">
+        <!--  Header Section-->
+        <section class="header">
+            <div class="container">
+                <div class="row align-items-center">
+                    <!-- Logo and Menu Mobile -->
+                    <div class="col-lg-3 col-md-6  col-sm-6 col-6">
+                        <!-- Side menu -->
+                        <div class="side-menu">
+                            <div class="icon d-inline">
+                                <img onclick="toggleMenu()" src="./images/icons/menu.jpg" alt="side menu">
+                            </div>
+                            <!-- Side menu Items -->
+                            <div class="side-menu-item hiden-menu" id="sideMenuItem">
+                                <div class="close" onclick="toggleMenu()" id="close">
+                                    <p>X</p>
+                                </div>
+                                <ul class="list-unstyled ">
+                                    <!-- Links -->
+                                    <li><a href="#">Home</a> </li>
+                                    <li><a href="#">Our Work</a> </li>
+                                    <li> <a href="#">About US</a> </li>
+                                    <li> <a href="#">Review</a> </li>
+                                    <li> <a href="#">Contact US</a> </li>
+                                </ul>
+                                <!-- Side menu Quick Info -->
+                                <div class="side-menu-info">
+                                    <div>
+                                        <button class="btn"> Say Hi</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Logo -->
+                        <img class="logo" src="./images/Logo.png" alt="logo">
+                        <img class="logo-no-text" src="./images/logo-no-text.png" alt="logo">
+                    </div>
+                    <!-- Links -->
+                    <div class=" col-lg-9 col-md-6 col-sm-6 col-6">
+                        <div class="info d-flex justify-content-around  align-items-center">
+                            <div class="links-menu">
+                                <a href="#">Home</a>
+                                <a href="#">Our Work</a>
+                                <a href="#">About US</a>
+                                <a href="#">Review</a>
+                                <a href="#">Contact US</a>
+
+                            </div>
+                            <div id="qoute">
+                                <button class="btn"> Say Hi </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- slider Section -->
+        <section class="slider">
+            <div class="container">
+                <!-- Content -->
+                <div class="content">
+                    <!-- Title -->
+                    <h1 class="title">
+                        We Build Brands That Lead & <br> Inspire
+                    </h1>
+                    <!-- Sub-title -->
+                    <p class="sub-title">
+                        On the other hand, we denounce with righteous indignation and dislike men who are so beguiled
+                        and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot
+                        foresee the pain and trouble
+                    </p>
+                    <!-- Actions -->
+                    <div class="action">
+                        <a href="#"> Read more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </section>
+
+    <!-- Service Section -->
+    <section class="services">
+        <div class="container">
+            <!-- Title -->
+            <h2 class="title">
+                Our Services
+            </h2>
+            <!-- Sub Title -->
+            <p class="sub-title text-center">
+                That are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of
+                will, which is the same as saying through
+            </p>
+            <div class="row align-items-center justify-content-center">
+                <div class=" col-md-4  ">
+                    <!-- Card -->
+                    <div class="card my-2">
+                        <div class="img">
+                            <img src="./images/icons/service1.png" alt="Thumbnail">
+                        </div>
+                        <div class="title"> Web Design </div>
+                        <div class="sub-title">Shrinking from toil and pain. These cases are perfectly simple and easy
+                            to distinguish. In a free hour, when our power.</div>
+                        <div class="read-more">
+                            <a href="#">Learn More <img src="./images/icons/arrow-right.png" alt="learn More"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-md-4 ">
+                    <!-- Card -->
+                    <div class="card  my-2">
+                        <div class="img">
+                            <img src="./images/icons/service2.png" alt="Thumbnail">
+
+                        </div>
+                        <div class="title">UI/UX Design</div>
+                        <div class="sub-title"> When nothing prevents our being able to do what we like best, every
+                            pleasure is to be welcomed and every pain avoided.</div>
+                        <div class="read-more">
+                            <a href="#">Learn More <img src="./images/icons/arrow-right.png" alt="learn More"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-md-4 ">
+                    <!-- Card -->
+                    <div class="card  my-2">
+                        <div class="img">
+                            <img src="./images/icons/Icon.png" alt="Thumbnail">
+                        </div>
+                        <div class="title">Graphic Design</div>
+                        <div class="sub-title"> But in certain circumstances and owing to the claims of duty or the
+                            obligations of business it will frequently occur.</div>
+                        <div class="read-more">
+                            <a href="#">Learn More <img src="./images/icons/arrow-right.png" alt="learn More"></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- We Are Hear -->
+    <section class="we-are-hear">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <!-- Title -->
+                    <h3 class="title">
+                        We Are Hear To Help You With
+                    </h3>
+                    <!-- Sub-title -->
+                    <p class="sub-title">
+                        But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain
+                        was born and I will give you a complete account of the system, and expound the actual teachings
+                        of the great explorer
+                        <br>
+                        <br>
+                        Of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids
+                        pleasure itself
+                    </p>
+                    <!-- Action -->
+                    <div class="action">
+                        <a href="#"> Read more</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="img">
+                        <img src="./images/we-are-img.png" alt="We are hear">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- interseted Work -->
+    <section class="intersted-work">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="img">
+                        <img src="./images/interset-img.png" alt="We are hear">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <!-- Title -->
+                    <h3 class="title">
+                        Interested To Work With Us?
+                    </h3>
+                    <!-- Sub-title -->
+                    <p class="sub-title">
+                        Because it is pleasure, but because those who do not know how to pursue pleasure rationally
+                        encounter consequences that are extremely painful. Nor again is there anyone who loves or
+                        pursues or desires to obtain pain
+                        <br>
+                        <br>
+                        Of itself, because it is pain, but because occasionally circumstances occur in which toil and
+                        pain can procure him some great pleasure
+                    </p>
+                    <!-- Action -->
+                    <div class="action">
+                        <div class="submit">
+                            <input type="text" id="item" value="">
+                            <button onclick="addItems()">
+                                <img src="./images/plus.png" alt="" srcset="">
+                            </button>
+                        </div>
+                        <ul id="list" class="list-unstyled ">
+
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial -->
+    <div class="testimonial">
+        <div class="container">
+            <div class="row align-items-center ">
+                <div class="col-md-6">
+                    <!-- img -->
+                    <div class="img">
+                        <img src="./images/testimonial.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <!-- Testimonial Slider -->
+                    <div class="slider">
+                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <p class="author">
+                                        Carla stevens
+                                    </p>
+                                    <p class="title">
+                                        Technical Director at MotiveZone
+                                    </p>
+                                    <p class="content">
+                                        “On the other hand, we denounce with righteous indignation and dislike men who
+                                        are so beguiled and demoralized by the charms of pleasure of the moment, so
+                                        blinded by desire, that they cannot foresee the pain and trouble that are bound
+                                        to ensue; and equal blame belongs to those who fail in their duty through
+                                        weakness of will, which is the same as saying.”
+                                    </p>
+                                </div>
+                                <div class="carousel-item">
+                                    <p class="author">
+                                        Carla stevens 2
+                                    </p>
+                                    <p class="title">
+                                        Technical Director at MotiveZone2
+                                    </p>
+                                    <p class="content">
+                                        “On the other hand, we denounce with righteous indignation and dislike men who
+                                        are so beguiled and demoralized by the charms of pleasure of the moment, so
+                                        blinded by desire, that they cannot foresee the pain and trouble that are bound
+                                        to ensue; and equal blame belongs to those who fail in their duty through
+                                        weakness of will, which is the same as saying.”
+                                    </p>
+                                </div>
+                                <div class="carousel-item">
+                                    <p class="author">
+                                        Carla stevens 3
+                                    </p>
+                                    <p class="title">
+                                        Technical Director at MotiveZone3
+                                    </p>
+                                    <p class="content">
+                                        “On the other hand, we denounce with righteous indignation and dislike men who
+                                        are so beguiled and demoralized by the charms of pleasure of the moment, so
+                                        blinded by desire, that they cannot foresee the pain and trouble that are bound
+                                        to ensue; and equal blame belongs to those who fail in their duty through
+                                        weakness of will, which is the same as saying.”
+                                    </p>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true">
+                                    <img src="./images/Left.png" alt="left">
+                                </span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true">
+                                    <img src="./images/Right.png" alt="right">
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row top-footer">
+                <!-- Info -->
+                <div class="col-md-4 ">
+                    <div class="info">
+                        <img src="./images/footer-logo.png" alt="Footer">
+                        <p>On the other hand, we denounce with righteous indignation and dislike men.</p>
+                        <h6>Interested To Work With Us</h6>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Enter your email address"
+                                aria-label="Enter your email address" aria-describedby="basic-addon2">
+                            <span class="input-group-text" id="basic-addon2">Send</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Company -->
+                <div class="col-md-2 offset-md-1">
+                    <div class="footer-items">
+                        <h6>Company</h6>
+                        <ul class="list-links list-unstyled">
+                            <li> <a href="#">About Us</a></li>
+                            <li> <a href="#">Protfolio</a></li>
+                            <li> <a href="#">Page</a></li>
+                            <li> <a href="#">FAQ</a></li>
+                            <li> <a href="#">Reviews</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Support -->
+                <div class="col-md-2">
+                    <div class="footer-items">
+                        <h6>Support</h6>
+                        <ul class="list-links list-unstyled">
+                            <li> <a href="#">Contact Us</a></li>
+                            <li> <a href="#">Privacy policy</a></li>
+                            <li> <a href="#">tram of use</a></li>
+                            <li> <a href="#">Buy & Sell</a></li>
+                            <li> <a href="#">Reviews</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Contact -->
+                <div class="col-md-2 ">
+                    <div class="footer-items">
+                        <h6>Contact</h6>
+                        <ul class="list-links list-unstyled">
+                            <li> <a href="#">Madani Ave, usa 1212</a></li>
+                            <li> <a href="#">+8802-55662000</a></li>
+                            <li> <a href="#">Email: www.uixzone12.com</a></li>
+                            <li> <a href="#">Buy & Sell</a></li>
+                            <li> <a href="#">Reviews</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- sub-footer -->
+            <div class="sub-footer">
+                <div class="row">
+                    <!-- Terms and Condation -->
+                    <div class="col-md-4 text-start terms">
+                         <a href="#"> Terms of Service</a>
+                         <a href="#" class="px-3"> Privacy Policy</a>
+                            <a href="#"> Security</a>
+                    </div>
+                    <!-- Social -->
+                    <div class="col-md-4 text-center social">
+                        <img src="./images/social/Facebook.png" alt="fb" class="mx-2">
+                        <img src="./images/social/Twitter.png" alt="tw" class="mx-2">
+                        <img src="./images/social/Youtube.png" alt="yt" class="mx-2">
+                    </div>
+                    <!-- Copy write -->
+                    <div class="col-md-4 text-end copy-write">
+                        <div class="copy">
+                            © 2020 <span>MotiveZone</span> All rights reserved.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popper -->
+    <script src="./js/popper.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="./js/bootstrap.min.js"></script>
+    <!-- Main  -->
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>

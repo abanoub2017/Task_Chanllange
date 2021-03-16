@@ -1,0 +1,394 @@
+// Services 
+.services {
+    // background-color: $grayFourColor;
+    padding-top: 74px;
+    padding-bottom: 74px;
+
+    @include maxTablet {
+        padding: 40px 0 69px;
+    }
+
+    @include maxMobile {
+        padding: 29px 0 43px;
+    }
+
+    .title {
+        @include text($SecColor, 40px, inherit, 0, normal, bold);
+        text-align: center;
+        margin-bottom: 15px;
+
+        @include maxTablet {
+            font-size: 30px;
+            margin-bottom: 37px;
+        }
+
+        @include maxMobile {
+            font-size: 30px;
+            margin-bottom: 16px;
+        }
+
+    }
+
+    .sub-title {
+        font-size: 15px;
+        width: 55%;
+        margin: auto;
+        margin-bottom: 30px;
+
+        @include maxTablet {
+            width: 80%;
+        }
+
+    }
+
+    .card {
+        box-sizing: border-box;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+
+        &:hover {
+            box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+            transition: all .3s ease-in-out;
+            -webkit-transition: all .3s ease-in-out;
+            -moz-transition: all .3s ease-in-out;
+            -ms-transition: all .3s ease-in-out;
+            -o-transition: all .3s ease-in-out;
+        }
+
+        .img {
+
+            // padding-top: 50px;
+            // margin-left: auto;
+            // margin-right: auto;
+            @include maxTablet {
+                // padding-top: 36px;
+            }
+
+            @include maxMobile {
+                // margin: 0;
+                // padding-top: 0;
+            }
+        }
+
+        @include maxMobile {
+            text-align: center;
+        }
+
+        .title {
+            @include text($SecColor, 20px, inherit, 0, 24px);
+            text-align: left;
+            margin: 15px 0 25px;
+
+            @include maxMobile {
+                text-align: center;
+            }
+        }
+
+        .sub-title {
+            @include text($SecColor, 15px, inherit, 0, 24px);
+            font-size: 15px;
+            width: 84%;
+            margin: 0 0 15px 0;
+
+            @include maxMobile {
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        .read-more {
+            a {
+                @include text($blueColor, 15px, inherit, 0, 24px);
+                text-decoration: none;
+
+                img {
+                    padding-left: 10px;
+                }
+            }
+        }
+    }
+}
+
+// we-are-hear
+.we-are-hear {
+    background: url(../../images/we-are-bg.png) no-repeat center center;
+    background-size: cover;
+    padding: 70px 0;
+
+    .title {
+        @include text($SecColor, 40px, inherit, 0, normal, bold);
+    }
+
+    .sub-title {
+        @include text($SecColor, 15px, inherit, 0, 24px);
+    }
+
+    .action {
+        padding-top: 35px;
+
+        a {
+            &:hover {
+                box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+                transition: all .3s ease-in-out;
+                -webkit-transition: all .3s ease-in-out;
+                -moz-transition: all .3s ease-in-out;
+                -ms-transition: all .3s ease-in-out;
+                -o-transition: all .3s ease-in-out;
+            }
+
+            @include text($whiteColor, 15px, inherit, 0, normal, normal);
+            text-decoration: none;
+            padding: 13px 30px;
+            border-radius: 4px;
+            background-color: $primaryColor;
+            text-align: center;
+            text-transform: capitalize;
+
+            @include maxMobile {
+                padding: 14px 40px;
+            }
+        }
+    }
+
+    .img {
+        img {
+            width: 100%;
+        }
+    }
+}
+
+// intersted-work
+.intersted-work {
+    padding: 104px 0 70px 0;
+
+    .title {
+        @include text($SecColor, 40px, inherit, 0, normal, bold);
+    }
+
+    .sub-title {
+        @include text($SecColor, 15px, inherit, 0, 24px);
+    }
+
+    .action {
+        padding-top: 35px;
+
+        a {
+            &:hover {
+                box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+                transition: all .3s ease-in-out;
+                -webkit-transition: all .3s ease-in-out;
+                -moz-transition: all .3s ease-in-out;
+                -ms-transition: all .3s ease-in-out;
+                -o-transition: all .3s ease-in-out;
+            }
+
+            @include text($whiteColor, 15px, inherit, 0, normal, normal);
+            text-decoration: none;
+            padding: 13px 30px;
+            border-radius: 4px;
+            background-color: $primaryColor;
+            text-align: center;
+            text-transform: capitalize;
+
+            @include maxMobile {
+                padding: 14px 40px;
+            }
+        }
+
+        .submit {
+            position: relative;
+
+            input {
+                width: 80%;
+                border: none;
+                height: 46px;
+                border-radius: 3px;
+                padding: 0 17px;
+                text-transform: uppercase;
+                box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%) !important;
+                @include maxMobile {
+                    width: 100%;
+                }
+            }
+
+            button {
+                position: absolute;
+                right: 21%;
+                top: 15%;
+                border: none;
+                background: transparent;
+                @include maxMobile {
+                    right: 3%;
+                    top: 19%;
+                }
+                img {
+                    height: 27px;
+                }
+            }
+        }
+
+        ul {
+            padding-left: 0;
+            list-style: none;
+            margin-top: 16px;
+
+            li {
+                padding:5px 8px;
+                display: inline;
+                border: 1px solid #AEAEB1;
+                color: #AEAEB1;
+                border-radius: 2px;
+                margin: 0 9px;
+            }
+        }
+    }
+
+    .img {
+        @include maxMobile {
+            margin-bottom: 60px;
+        }
+        img {
+            width: 70%;
+           
+        }
+    }
+}
+
+
+// testimonial
+.testimonial{
+    padding: 104px 0 70px 0;
+    @include maxTablet {
+        padding: 0 0 98px 0;
+    }
+    .carousel-item{
+        @include maxTablet {
+            padding: 15px 0;
+        }
+        .author{
+            @include text($SecColor, 20px, inherit, 0, 24px);
+        }
+        .title{
+            @include text($SecColor, 15px, inherit, 0, 24px);
+        }
+        .content{
+            @include text($SecColor, 17px, inherit, 0, 24px);
+        }
+    }
+    .carousel-control-next, .carousel-control-prev{
+        opacity: 1;
+        width: auto;
+        top: unset;
+        bottom: unset;
+    }
+    .carousel-control-next {
+        right: 83%;
+        @include maxTablet {
+            right: 75%;
+        }
+    }
+    .img{
+        text-align: right;
+        img{
+            width: 100%;
+        }
+    }
+
+}
+
+
+// Footer
+.footer{
+    background: $blackColor;
+    padding: 46px 0 19px;
+    color: $whiteColor;
+    .top-footer{
+        padding:0 0 80px 0;
+        border-bottom: 1px solid #70707061;
+        @include maxTablet {
+            padding: 0 0 10px 0;
+        }
+    }
+    .info{
+        p{
+            @include text($graySixColor, 15px, inherit, 0, 24px);
+            margin: 15px 0 30px;
+        }
+        h6{
+            margin-bottom: 20px;
+        }
+        .input-group{
+            input{
+                height: 53px;
+                border: none;
+            }
+            span{
+                background-color: $blueColor;
+                font-weight: bold;
+                color: $whiteColor;
+                font-size: 15px;
+                border: none;
+                padding: 0 20px;
+            }
+        }
+    }
+    .footer-items{
+        @include maxTablet {
+            text-align: center !important;
+        }
+        ul{
+            li{
+                padding: 6px 0;
+                a{
+                    @include text($graySixColor, 15px, inherit, 0, 24px);
+                    text-decoration: none;
+                    &:hover {
+                        color: $primaryColor;
+                        transition: all .3s ease-in-out;
+                        -webkit-transition: all .3s ease-in-out;
+                        -moz-transition: all .3s ease-in-out;
+                        -ms-transition: all .3s ease-in-out;
+                        -o-transition: all .3s ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+    .sub-footer{
+        padding: 30px 0 0 0;
+        .terms , .social , .copy-write{
+            @include maxTablet {
+                text-align: center !important;
+                padding: 15px 0;
+            }
+        }
+        a{
+            @include text($graySixColor, 14px, inherit, 0, 24px);
+            text-decoration: none;
+            &:hover {
+                color: $primaryColor;
+                transition: all .3s ease-in-out;
+                -webkit-transition: all .3s ease-in-out;
+                -moz-transition: all .3s ease-in-out;
+                -ms-transition: all .3s ease-in-out;
+                -o-transition: all .3s ease-in-out;
+            }
+        }
+        .copy{
+            @include text($graySixColor, 14px, inherit, 0, 24px);
+            span{
+                color: $primaryColor;
+                &:hover {
+                    color: $primaryColor;
+                    transition: all .3s ease-in-out;
+                    -webkit-transition: all .3s ease-in-out;
+                    -moz-transition: all .3s ease-in-out;
+                    -ms-transition: all .3s ease-in-out;
+                    -o-transition: all .3s ease-in-out;
+                }
+            }
+        }
+    }
+}
